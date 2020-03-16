@@ -1,0 +1,31 @@
+/*  Variables  */
+
+$header1: 5rem;
+$header3: 2rem;
+
+$header1-mobile: 4.5rem;
+$header3-mobile: 2rem;
+
+$background: #27496d;
+
+/*  Mixin's  */
+
+@mixin flex($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin margins {
+    width: 90%;
+    margin: auto;
+}
+
+/*  Imports  */
+
+@import "global";
+@import "misc";
+@import "projects";
+@import "mobile";
+@import "animations";

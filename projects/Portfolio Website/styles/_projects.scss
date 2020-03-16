@@ -1,0 +1,20 @@
+/*  Projects Section  */
+
+.projects {
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    @include flex(space-between, center, row);
+    text-align: center;
+    flex-wrap: wrap;
+
+    h2 {
+        margin: 5rem;
+    }
+}
+
+.travelly,
+.elena-joy {
+    flex: 1 1 40rem;
+    margin-bottom: 10rem;
+}

@@ -1,0 +1,26 @@
+/*  Variables  */
+
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(to right, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+
+/*  Mixin's  */
+
+@mixin flex($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "mobile";

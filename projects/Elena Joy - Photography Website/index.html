@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+
+    <!-- Site Description -->
+    <title>Elena Joy | Professional Photographer</title>
+    <meta name="description" content="Professional Photographer available for weddings and special events.">
+
+    <!-- Site Icon -->
+
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-head">
+        <nav>
+            <h1 id="logo">Elena Joy</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+            <!-- Burger Button -->
+            <div class="burger">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-introduction flex">
+                <h2>Elena Joy<br>Photography</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias similique, quaerat magnam doloribus
+                    veritatis unde nobis numquam nostrum tempora sapiente!
+                </p>
+                <a href="#gallery">Gallery</a>
+            </div>
+
+            <div class="hero-images">
+                <img class="hero-elena" src="./img/elena-joy.png" alt="Picture of Elena Joy">
+                <img src="./img/plant1.png" alt="" class="plant1 plant">
+                <img src="./img/plant2.png" alt="" class="plant2 plant">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-image">
+                <h5>MINIMAL</h5>
+                <img src="./img/about-image.png" alt="Portrait Picture">
+            </div>
+            <div class="about-text flex">
+                <h2>Elena Joy</h2>
+                <div class="about-life">
+                    <h3>My Life</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic id ipsam adipisci sequi
+                        aperiam consequatur? Facilis dicta voluptatem maxime!
+                    </p>
+                </div>
+                <div class="about-work">
+                    <h3>My Work</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic id ipsam adipisci sequi
+                        aperiam consequatur? Facilis dicta voluptatem maxime!
+                    </p>
+                </div>
+                <div class="about-life">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis hic id ipsam adipisci sequi
+                        aperiam consequatur? Facilis dicta voluptatem maxime!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <header class="gallery-head">
+                <h2>Quality Photography</h2>
+                <p>Here's a sneak peak of my work.</p>
+            </header>
+            <img class="gallery1" src="./img/gallery-1.jpg" alt="Man in a Suit">
+            <img class="gallery2" src="./img/gallery-2.jpg" alt="Lady in a Coat">
+            <img class="gallery3" src="./img/gallery-3.jpg" alt="Lady in a T-Shirt">
+            <img class="gallery4" src="./img/gallery-4.jpg" alt="Lady in a Jacket">
+        </section>
+
+        <section id="contact">
+            <div class="form-wrapper flex">
+                <h2>
+                    Get in
+                    <br>
+                    <span>touch.</span>
+                </h2>
+                <form>
+                    <label for="email">Your E-mail: </label>
+                    <input type="email" id="email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <img src="./img/contact-image.jpg" alt="Picture of Elena Joy">
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="footer-text"></h4>
+        <ul>
+            <li><a href="#"><img src="./img/youtube-symbol 1.svg" alt="Youtube Logo"></a></li>
+            <li><a href="#"><img src="./img/twitter 1.svg" alt="Twitter Logo"></a></li>
+            <li><a href="#"><img src="./img/instagram 1.svg" alt="Instagram Logo"></a></li>
+        </ul>
+
+        <!-- Small Script to get the current year -->
+        <script>
+            let year = new Date().getFullYear();
+            document.querySelector(".footer-text").textContent = `Elena Joy © ${year}`;
+        </script>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

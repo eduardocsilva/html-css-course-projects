@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+
+    <!-- Site Description -->
+    <title>Eduardo Silva | Web Developer</title>
+    <meta name="description" content="Eduardo Silva is a front-end developer who specializes in HTML and CSS.">
+
+    <!-- Site Icon -->
+
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-head">
+        <nav>
+            <div class="logo">
+                <img src="../icons/code.svg" alt="Logo">
+                <h1>Eduardo Silva</h1>
+            </div>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="./" class="active">Projects</a></li>
+                <li><a href="../contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="travelly">
+                <h2>Travelly</h2>
+                <img src="../img/travelly.jpg" alt="Travelly Project">
+            </div>
+            <div class="elena-joy">
+                <h2>Elena Joy</h2>
+                <img src="../img/elena-joy.jpg" alt="Elena Joy Project">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="footer-text"></h4>
+        <ul>
+            <li><a href="#"><img src="../icons/twitter 1.svg" alt="Twitter Link"></a></li>
+            <li><a href="#"><img src="../icons/instagram 1.svg" alt="Instagram Link"></a></li>
+            <li><a href="#"><img src="../icons/youtube-symbol 1.svg" alt="YouTube Link"></a></li>
+        </ul>
+
+        <!-- Small Script to get the current year -->
+        <script>
+            let year = new Date().getFullYear();
+            document.querySelector(".footer-text").textContent = `Eduardo Silva © ${year}`;
+        </script>
+    </footer>
+
+</body>
+
+</html>

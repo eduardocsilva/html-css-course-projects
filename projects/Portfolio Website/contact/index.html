@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+
+    <!-- Site Description -->
+    <title>Eduardo Silva | Web Developer</title>
+    <meta name="description" content="Eduardo Silva is a front-end developer who specializes in HTML and CSS.">
+
+    <!-- Site Icon -->
+
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-head">
+        <nav>
+            <div class="logo">
+                <img src="../icons/code.svg" alt="Logo">
+                <h1>Eduardo Silva</h1>
+            </div>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../projects">Projects</a></li>
+                <li><a href="./" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="footer-text"></h4>
+        <ul>
+            <li><a href="#"><img src="../icons/twitter 1.svg" alt="Twitter Link"></a></li>
+            <li><a href="#"><img src="../icons/instagram 1.svg" alt="Instagram Link"></a></li>
+            <li><a href="#"><img src="../icons/youtube-symbol 1.svg" alt="YouTube Link"></a></li>
+        </ul>
+
+        <!-- Small Script to get the current year -->
+        <script>
+            let year = new Date().getFullYear();
+            document.querySelector(".footer-text").textContent = `Eduardo Silva © ${year}`;
+        </script>
+    </footer>
+
+</body>
+
+</html>

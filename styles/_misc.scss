@@ -1,0 +1,15 @@
+/*  Header Section  */
+
+header {
+    @include flex(center, center, row);
+    min-height: 20vh;
+    text-align: center;
+}
+
+/*  Footer Section  */
+
+footer {
+    @include flex(center, center, row);
+    min-height: 10vh;
+    text-align: center;
+}

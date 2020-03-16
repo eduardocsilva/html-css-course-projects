@@ -1,0 +1,42 @@
+/*  Projects Section  */
+
+.projects {
+    @include flex(space-evenly, center, row);
+    flex-wrap: wrap;
+    min-height: 70vh;
+}
+
+.project {
+    margin: 5rem;
+    height: 35rem;
+    max-width: 50rem;
+    flex: 1 1 50rem;
+    @include flex(flex-start, center, column);
+    background: #1b2a49;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    a {
+        @include flex(flex-start, center, column);
+
+        h3 {
+            text-align: center;
+            margin-top: 2.3rem;
+        }
+
+        img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            position: absolute;
+            top: 20%;
+        }
+    }
+
+    &:hover, &:focus {
+        transform: scale(1.1);
+    }
+}

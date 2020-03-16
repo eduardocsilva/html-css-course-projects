@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow">
+
+    <!-- Site Description -->
+    <title>HTML and CSS Course Project Showcase</title>
+    <meta name="description" content="Website to showcase three small websites, developed in an HTML and CSS Course.">
+
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="./icons/code.svg" type="image/x-icon">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>HTML and CSS Course Project Showcase</h1>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="project">
+                <a href="./projects/Travelly - Travel Website/" target="_blank" rel="noopener noreferrer">
+                    <h3>Travel Agency Website</h3>
+                    <img src="./img/TravelWebsite.png" alt="Travel Agency Website">
+                </a>
+            </div>
+            <div class="project">
+                <a href="./projects/Elena Joy - Photography Website/" target="_blank" rel="noopener noreferrer">
+                    <h3>Photography Showcase Website</h3>
+                    <img src="./img/PhotographyWebsite.png" alt="Photography Showcase Website">
+                </a>
+            </div>
+            <div class="project">
+                <a href="./projects/Portfolio Website/" target="_blank" rel="noopener noreferrer">
+                    <h3>Portfolio Showcase Website</h3>
+                    <img src="./img/PortfolioWebsite.png" alt="Portfolio Showcase Website">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="footer-text"></h3>
+
+        <!-- Small Script to get the current year -->
+        <script>
+            let year = new Date().getFullYear();
+            document.querySelector(".footer-text").textContent = `Eduardo Silva © ${year}`;
+        </script>
+    </footer>
+</body>
+
+</html>

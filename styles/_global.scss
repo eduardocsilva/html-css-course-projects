@@ -1,0 +1,40 @@
+/*  Global Styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    @include margins;
+    background: $background;
+    animation: fade 1s ease-in-out forwards;
+}
+
+h1 {
+    font-size: $header1;
+    color: white;
+    font-family: "Pattaya", sans-serif;
+}
+
+h3 {
+    font-size: $header3;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}

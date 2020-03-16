@@ -1,0 +1,24 @@
+/*  Media Queries  */
+
+@media screen and (max-width: 730px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: $header1-mobile;
+    }
+    
+    h3 {
+        font-size: $header3-mobile;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    html {
+        font-size: 35%;
+    }
+}
