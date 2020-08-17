@@ -6,37 +6,40 @@
     min-height: 70vh;
 }
 
-.project {
+.project-card {
     margin: 5rem;
     height: 35rem;
     max-width: 50rem;
     flex: 1 1 50rem;
-    @include flex(flex-start, center, column);
     background: #1b2a49;
     border-radius: 2rem;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.05s ease-in-out;
+    box-shadow: 1px 1px 3px black;
 
-    a {
-        @include flex(flex-start, center, column);
-
-        h3 {
-            text-align: center;
-            margin-top: 2.3rem;
-        }
-
-        img {
-            width: 100%;
-            height: 80%;
-            object-fit: cover;
-            position: absolute;
-            top: 20%;
-        }
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 5px black;
     }
+}
 
-    &:hover, &:focus {
-        transform: scale(1.1);
+.card-title {
+    @include flex(center, center, column);
+    height: 20%;
+}
+
+.card-content {
+    @include flex(center, center, column);
+    height: 80%;
+
+    img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        position: absolute;
+        top: 20%;
     }
 }
