@@ -1,6 +1,6 @@
 # HTML and CSS Course Website Repository
 
-### Description
+## Description
 
 This repository contains three projects from a HTML and CSS Course in which I enrolled.
 
@@ -14,7 +14,7 @@ These projects consist of simple websites, developed with HTML and CSS, and serv
 -   HTML5 Semantics
 -   etc.
 
-### Course
+## Course
 
 The course in question is **"The Creative HTML5 & CSS3 Course"**, from Dev Ed, a well known multimedia content creator with over 200k subscribers on YouTube.
 
